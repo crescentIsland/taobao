@@ -1,0 +1,42 @@
+Selected Features (40 total):
+============================================================
+ 1. ui_funnel_score
+ 2. c_browse_to_buy_rate
+ 3. ui_attention_intensity
+ 4. u_purchase_rate
+ 5. ui_recent_action_concentration
+ 6. ui_days_since_last_action
+ 7. i_cart_to_buy_rate
+ 8. i_cart_count
+ 9. u_total_actions_7d
+10. c_fav_to_buy_rate
+11. avg_interval
+12. u_total_actions_14d
+13. ui_recent_3d
+14. i_fav_to_buy_rate
+15. u_total_actions_21d
+16. i_act_total_1d
+17. uc_browse_count
+18. ui_last_action_hour
+19. u_total_actions_3d
+20. uc_preference_score
+21. u_purchase_count
+22. ui_view_frequency
+23. c_purchase_count
+24. c_cart_to_buy_rate
+25. c_act_total_14d
+26. c_popularity_rank
+27. ui_popularity_preference_score
+28. uc_total_actions
+29. i_act_total_14d
+30. c_act_total_1d
+31. i_browse_to_buy_rate
+32. c_cart_count
+33. ui_total_actions
+34. i_unique_users
+35. c_act_total_7d
+36. i_hot_hour
+37. c_act_total_3d
+38. ui_time_from_first_view
+39. c_act_total_21d
+40. c_browse_count

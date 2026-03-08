@@ -1,0 +1,54 @@
+# 项目路径配置
+paths:
+  # 数据路径
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+
+  # 模型路径
+  models: "models/trained"
+  model_metrics: "models/metrics"
+
+  # 报告路径
+  reports_figures: "reports/figures"
+  reports_tables: "reports/tables"
+
+  # 源代码路径
+  src: "src"
+
+# 数据文件配置
+data_files:
+  user_behavior: "user_action.csv"
+  user_action_processed: "user_action_processed.parquet"
+
+# 添加数据预处理相关配置
+data_preprocessing:
+  # 分块处理配置
+  chunksize: 100000  # 每次读取10万行
+
+  # 字段映射
+  behavior_type_mapping:
+    1: "view"
+    2: "favorite"
+    3: "cart"
+    4: "purchase"
+
+  # 去重规则
+  deduplication:
+    keep_behavior_types: ["view", "favorite"]  # 这些行为可以重复
+    remove_behavior_types: ["cart", "purchase"]  # 这些行为不能重复
+    time_window_hours: 1  # 时间窗口（小时）
+
+  # 数据类型优化
+  dtype_optimization:
+    user_id: "int32"
+    item_id: "int32"
+    category_id: "int32"
+    behavior_type: "category"
+
+  # 缺失值处理
+  missing_values:
+    user_id: "drop"
+    item_id: "drop"
+    behavior_type: "mode"
+    category_id: "-1"
+    timestamp: "interpolate"

@@ -1,0 +1,44 @@
+
+逻辑回归训练报告（数据清洗版）
+=============================
+
+数据说明:
+- 已删除泄露特征: ui_has_purchased, ui_purchase_count
+- 实际使用特征数: 28个
+
+数据划分:
+- 训练集: 339,048 样本 (正样本率: 25.00%)
+- 验证集: 103,477 样本 (正样本率: 9.09%)
+- 测试集: 105,336 样本 (正样本率: 9.09%)
+
+最优参数:
+- C (正则化强度): 0.01
+- class_weight: balanced
+- 决策阈值: 0.85
+
+测试集性能:
+- AUC-ROC: 0.9877
+- F1-Score: 0.9178
+- Precision: 0.8492
+- Recall: 0.9985
+- Accuracy: 0.9837
+
+Top 5 重要特征 (促进购买):
+                 feature     coef
+        ui_total_actions 0.577013
+  ui_attention_intensity 0.610017
+        i_purchase_ratio 1.644904
+        ui_purchase_rate 3.314149
+ui_views_before_purchase 4.789098
+
+Top 5 重要特征 (抑制购买):
+                  feature      coef
+          i_act_total_14d  0.076979
+       u_total_actions_3d -0.100090
+ui_personalized_hot_score -0.138249
+        ui_view_frequency  0.198321
+           i_browse_ratio  0.221052
+
+重要说明:
+本次训练使用了清洗后的28个特征（原30个特征删除了2个泄露特征）。
+这确保了模型泛化能力的真实性，避免了"用购买行为预测购买"的数据泄露问题。
