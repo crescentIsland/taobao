@@ -1,0 +1,89 @@
+======================================================================
+筛选出的 40 个特征 (淘宝用户购买预测)
+生成时间: 2026-03-12 12:52:02
+======================================================================
+
+【Item Features (商品特征)】(8个)
+--------------------------------------------------
+ 1. i_cart_to_buy_rate
+ 2. i_cart_count
+ 3. i_fav_to_buy_rate
+ 4. i_act_total_1d
+ 5. i_act_total_14d
+ 6. i_browse_to_buy_rate
+ 7. i_unique_users
+ 8. i_hot_hour
+
+【User Features (用户特征)】(6个)
+--------------------------------------------------
+ 1. u_purchase_rate
+ 2. u_total_actions_7d
+ 3. u_total_actions_14d
+ 4. u_total_actions_21d
+ 5. u_total_actions_3d
+ 6. u_purchase_count
+
+【User-Item Interaction (用户-商品交互)】(10个)
+--------------------------------------------------
+ 1. ui_funnel_score
+ 2. ui_attention_intensity
+ 3. ui_recent_action_concentration
+ 4. ui_days_since_last_action
+ 5. ui_recent_3d
+ 6. ui_last_action_hour
+ 7. ui_view_frequency
+ 8. ui_popularity_preference_score
+ 9. ui_total_actions
+10. ui_time_from_first_view
+
+【Category Features (类目特征)】(12个)
+--------------------------------------------------
+ 1. c_browse_to_buy_rate
+ 2. c_fav_to_buy_rate
+ 3. c_purchase_count
+ 4. c_cart_to_buy_rate
+ 5. c_act_total_14d
+ 6. c_popularity_rank
+ 7. c_act_total_1d
+ 8. c_cart_count
+ 9. c_act_total_7d
+10. c_act_total_3d
+11. c_act_total_21d
+12. c_browse_count
+
+【User-Category Interaction (用户-类目交互)】(3个)
+--------------------------------------------------
+ 1. uc_browse_count
+ 2. uc_preference_score
+ 3. uc_total_actions
+
+【Time Features (时间特征)】(3个)
+--------------------------------------------------
+ 1. ui_last_action_hour
+ 2. i_hot_hour
+ 3. ui_time_from_first_view
+
+【Conversion/Ratio (转化率)】(11个)
+--------------------------------------------------
+ 1. ui_funnel_score
+ 2. c_browse_to_buy_rate
+ 3. u_purchase_rate
+ 4. ui_recent_action_concentration
+ 5. i_cart_to_buy_rate
+ 6. c_fav_to_buy_rate
+ 7. i_fav_to_buy_rate
+ 8. uc_preference_score
+ 9. c_cart_to_buy_rate
+10. ui_popularity_preference_score
+11. i_browse_to_buy_rate
+
+【Other (其他)】(1个)
+--------------------------------------------------
+ 1. avg_interval
+
+======================================================================
+数据文件信息:
+- 训练集: 328974 样本
+- 验证集: 41122 样本
+- 测试集: 41136 样本
+- 正样本比例: 25.16%

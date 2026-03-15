@@ -1,0 +1,122 @@
+{
+  "selected_features": [
+    "ui_funnel_score",
+    "c_browse_to_buy_rate",
+    "ui_attention_intensity",
+    "u_purchase_rate",
+    "ui_recent_action_concentration",
+    "ui_days_since_last_action",
+    "i_cart_to_buy_rate",
+    "i_cart_count",
+    "u_total_actions_7d",
+    "c_fav_to_buy_rate",
+    "avg_interval",
+    "u_total_actions_14d",
+    "ui_recent_3d",
+    "i_fav_to_buy_rate",
+    "u_total_actions_21d",
+    "i_act_total_1d",
+    "uc_browse_count",
+    "ui_last_action_hour",
+    "u_total_actions_3d",
+    "uc_preference_score",
+    "u_purchase_count",
+    "ui_view_frequency",
+    "c_purchase_count",
+    "c_cart_to_buy_rate",
+    "c_act_total_14d",
+    "c_popularity_rank",
+    "ui_popularity_preference_score",
+    "uc_total_actions",
+    "i_act_total_14d",
+    "c_act_total_1d",
+    "i_browse_to_buy_rate",
+    "c_cart_count",
+    "ui_total_actions",
+    "i_unique_users",
+    "c_act_total_7d",
+    "i_hot_hour",
+    "c_act_total_3d",
+    "ui_time_from_first_view",
+    "c_act_total_21d",
+    "c_browse_count"
+  ],
+  "feature_groups": {
+    "Item Features (商品特征)": [
+      "i_cart_to_buy_rate",
+      "i_cart_count",
+      "i_fav_to_buy_rate",
+      "i_act_total_1d",
+      "i_act_total_14d",
+      "i_browse_to_buy_rate",
+      "i_unique_users",
+      "i_hot_hour"
+    ],
+    "User Features (用户特征)": [
+      "u_purchase_rate",
+      "u_total_actions_7d",
+      "u_total_actions_14d",
+      "u_total_actions_21d",
+      "u_total_actions_3d",
+      "u_purchase_count"
+    ],
+    "User-Item Interaction (用户-商品交互)": [
+      "ui_funnel_score",
+      "ui_attention_intensity",
+      "ui_recent_action_concentration",
+      "ui_days_since_last_action",
+      "ui_recent_3d",
+      "ui_last_action_hour",
+      "ui_view_frequency",
+      "ui_popularity_preference_score",
+      "ui_total_actions",
+      "ui_time_from_first_view"
+    ],
+    "Category Features (类目特征)": [
+      "c_browse_to_buy_rate",
+      "c_fav_to_buy_rate",
+      "c_purchase_count",
+      "c_cart_to_buy_rate",
+      "c_act_total_14d",
+      "c_popularity_rank",
+      "c_act_total_1d",
+      "c_cart_count",
+      "c_act_total_7d",
+      "c_act_total_3d",
+      "c_act_total_21d",
+      "c_browse_count"
+    ],
+    "User-Category Interaction (用户-类目交互)": [
+      "uc_browse_count",
+      "uc_preference_score",
+      "uc_total_actions"
+    ],
+    "Time Features (时间特征)": [
+      "ui_last_action_hour",
+      "i_hot_hour",
+      "ui_time_from_first_view"
+    ],
+    "Conversion/Ratio (转化率)": [
+      "ui_funnel_score",
+      "c_browse_to_buy_rate",
+      "u_purchase_rate",
+      "ui_recent_action_concentration",
+      "i_cart_to_buy_rate",
+      "c_fav_to_buy_rate",
+      "i_fav_to_buy_rate",
+      "uc_preference_score",
+      "c_cart_to_buy_rate",
+      "ui_popularity_preference_score",
+      "i_browse_to_buy_rate"
+    ],
+    "Other (其他)": [
+      "avg_interval"
+    ]
+  },
+  "n_features": 40,
+  "train_samples": 328974,
+  "val_samples": 41122,
+  "test_samples": 41136,
+  "positive_rate_train": 0.2516277882142662,
+  "created_at": "2026-03-12 12:52:02"
+}

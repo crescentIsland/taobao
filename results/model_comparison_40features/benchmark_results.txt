@@ -1,0 +1,33 @@
+
+【5.1 推理速度】
+
+Logistic Regression (纯CPU):
+- 单样本推理: 0.16 ms
+- 批量推理 (batch=32): 0.01 ms/样本 (每批次约 0.00ms)
+- 批量推理 (batch=64): 0.00 ms/样本 (每批次约 0.00ms)
+- 硬件环境: CPU 8核, 15.8GB RAM, 无GPU
+
+XGBoost (纯CPU):
+- 单样本推理: 3.72 ms
+- 批量推理 (batch=32): 0.12 ms/样本 (每批次约 0.00ms)
+- 批量推理 (batch=64): 0.07 ms/样本 (每批次约 0.00ms)
+- 硬件环境: 同上
+
+速度对比: XGBoost单样本比LR慢 23.3 倍
+
+【5.2 模型大小】
+- Logistic Regression: 0.00 MB (joblib .pkl格式)
+- XGBoost: 0.87 MB (joblib .pkl格式)
+- 特征标准化器: 0.00 MB
+
+【5.3 资源消耗 (纯CPU)】
+
+Logistic Regression:
+- CPU峰值: 0.0%
+- 内存占用: 212.7 MB
+- GPU显存: 不适用 (纯CPU计算)
+
+XGBoost:
+- CPU峰值: 0.0%
+- 内存占用: 200.6 MB
+- GPU显存: 不适用 (纯CPU计算)

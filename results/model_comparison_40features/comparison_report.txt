@@ -1,0 +1,55 @@
+
+双模型对比训练报告（40个特征）
+=============================
+
+数据信息:
+- 特征数量: 40个
+- 训练集: 328,974样本 (正样本率25.16%)
+- 验证集: 41,122样本 (正样本率24.69%)
+- 测试集: 41,136样本 (正样本率24.01%)
+
+模型配置:
+Logistic Regression:
+- 最优参数: C=10.0, class_weight=balanced
+- 最优阈值: 0.50
+- 训练集AUC: 0.7963
+- 测试集AUC: 0.7917
+- 泛化差距: 0.0046
+
+XGBoost:
+- 最优参数: {'max_depth': 6, 'learning_rate': 0.1, 'n_estimators': 200}
+- 最优阈值: 0.55
+- 训练集AUC: 0.8438
+- 测试集AUC: 0.8230
+- 泛化差距: 0.0208
+
+性能对比（测试集）:
+指标            LR      XGBoost   提升
+Accuracy:      0.7348   0.7614   +0.0266
+Precision:     0.4647   0.5023   +0.0376
+Recall:        0.6886   0.6970   +0.0084
+F1-Score:      0.5549   0.5838   +0.0289
+AUC:           0.7917   0.8230   +0.0313
+
+关键发现:
+1. 过拟合控制:
+   - LR训练-测试AUC差距: 0.46% (优秀)
+   - XGB训练-测试AUC差距: 2.08% (需关注)
+
+2. 模型选择建议:
+   - 若追求解释性: 选择LR (系数可解释)
+   - 若追求性能: 选择XGBoost (AUC提升+3.13%)
+   - 两者泛化能力均良好，Gap均<2%
+
+Top 10关键特征(XGBoost):
+                       feature  importance
+     ui_days_since_last_action    0.019895
+                  i_cart_count    0.026937
+            i_cart_to_buy_rate    0.029275
+                  avg_interval    0.029472
+             c_fav_to_buy_rate    0.030415
+ui_recent_action_concentration    0.049736
+               u_purchase_rate    0.053311
+        ui_attention_intensity    0.126947
+          c_browse_to_buy_rate    0.163295
+               ui_funnel_score    0.165908
